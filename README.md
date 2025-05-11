@@ -115,7 +115,7 @@ if ($user->is_premium) {
 
 ### select() - Nur benötigte Felder laden
 
-Standardmäßig lädt Laravel alle Spalten (`SELECT *`). Mit `select()` können Sie die geladenen Daten minimieren:
+Standardmäßig lädt Laravel alle Spalten (`SELECT *`). Mit `select()` kann man die geladenen Daten minimieren:
 
 ```php
 // Statt SELECT * FROM users
@@ -177,7 +177,7 @@ foreach (User::where('active', true)->cursor() as $user) {
 }
 ```
 
-**Vorteil:** Minimal Memory-Verbrauch  
+**Vorteil:** Minimaler Speicher-Verbrauch  
 **Nachteil:** Hält Datenbankverbindung länger offen
 
 ---
@@ -186,7 +186,7 @@ foreach (User::where('active', true)->cursor() as $user) {
 
 ### addSelect() - Subquery als zusätzliche Spalte
 
-Mit `addSelect()` können Sie berechnete Werte als Spalten hinzufügen:
+Mit `addSelect()` kann man berechnete Werte als Spalten hinzufügen:
 
 ```php
 $users = User::addSelect([
@@ -761,5 +761,4 @@ Telescope zeigt:
 
 ---
 
-*Dieses Dokument basiert auf Laravel Best Practices und Erfahrungen aus produktiven Anwendungen. Aktualisiert für Laravel 10.x/11.x.*
 *Dieses Dokument basiert auf Laravel Best Practices und Erfahrungen aus produktiven Anwendungen. Aktualisiert für Laravel 10.x/11.x.*
