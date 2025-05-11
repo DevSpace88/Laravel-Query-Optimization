@@ -1,4 +1,4 @@
-# Laravel Query Optimization - Detaillierte Anleitung
+# Laravel Query Optimization
 
 ## Inhaltsverzeichnis
 
