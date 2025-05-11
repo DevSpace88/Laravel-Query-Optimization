@@ -409,7 +409,7 @@ $usersByCountry = User::selectRaw('country, COUNT(*) as user_count')
 
 ### Query Cache Implementierung
 
-Laravel kann Query-Ergebnisse cachen:
+Laravel bietet standardmäßig kein `remember()` auf Eloquent-Abfragen. Hier sind die Optionen:
 
 ```php
 // OPTION 1: Standard Cache Facade
